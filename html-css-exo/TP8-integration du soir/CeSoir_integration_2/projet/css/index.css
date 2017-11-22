@@ -1,0 +1,194 @@
+/* 1er partie Mise en page avec les principaux éléments*/
+body
+{
+    margin: 50px auto; /*donne une marge à la page*/
+    background: #a2c5b8 no-repeat fixed; /*place une couleur de fond */
+    color: black; /* attritre la couleur à tout les éléments e la page*/
+    width: 65%; /*taillemargin: 10px 50px de la page*/
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+header
+{
+    background: url(../img/planks0096.jpg) repeat-x; /* importation du fond en planche du Header*/
+    border-top: 20px solid #b1a9a9;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+header, #body, #footer
+{
+width: 100%/* les éléments occupents 100% du body */
+}
+
+section
+{
+    display: flex;
+    justify-content: space-around;
+    align-content: flex-start;
+    background-image: url(../img/bg_txt.jpg);
+    width: 100%;
+    text-align: center;
+}
+
+header, footer
+{
+    height: 350px;
+}
+
+
+#body
+{
+    height: auto;
+}
+
+#footer
+{
+    background: url(../img/bg_txt.jpg) repeat-x;
+}
+
+/*2eme partie Configuration du Header de la page (en-tête)*/
+h1
+{
+    font-weight: bold;
+    margin: 0 10px; /*Placement d'une marge au titre h1 du header*/
+    padding: 20px;
+    text-align: left; /*aligne le texte à gauche*/
+    font-size: 1.4em; /* taille de la police h1 du header*/
+    text-transform: uppercase; /*Place tout les caractères en masjucule*/
+    color: inherit; /*color du texte a l'identique que celle du parent*/
+}
+
+h3
+{
+    font-weight: bold;
+    text-transform: uppercase; /*Place tout les caractères en masjucule*/
+}
+
+nav
+{
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    word-spacing: 0.6em;
+    padding: 22px;
+    order: 2;
+}
+
+ul li
+{
+    display: inline-block; /* met les elements du menu en inline conservant les propriétés block*/
+}
+
+ul li a
+{
+    list-style-type: none; /* aucuns effets de liste sur la liste a puce*/
+    text-decoration: none; /*aucuns effets de style aux liens*/
+    color: inherit; /*la couleur des liens sont établi par rapport au parent*/
+}
+    ul li a:hover
+    {
+        color:#5b585c; /*changement de couleur au survol*/
+    }
+
+header div.entete
+{
+    width: 15%; /* mise a l'échelle d'une image sous le nav*/
+    align-self: center; /*centre l'élément dans le Header */
+
+}
+
+.conteneur
+{
+    align-self: center;
+    flex-direction: column;
+    margin: 0;
+    width: auto;
+    height: auto;
+    display: inline-block;
+}
+.contenu
+{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+#our_story .conteneur:first-child, #fare .conteneur:last-child, #drine .conteneur:first-child, #contact .conteneur:last-child
+{
+    padding: 0;
+    width: 25%;
+    height: 50%;
+
+}
+
+.conteneur img
+{
+
+    width: auto;
+    height: 30vw;
+}
+
+/*Agencement du texte*/
+
+.conteneur h3
+{
+    text-transform: uppercase;
+    font-size: 1.8vw;
+    font-weight: bold;
+
+}
+.conteneur p
+{
+
+    text-align: center;
+    font-style: italic;
+    font-size: 1vw;
+}
+
+
+    /* FONTAWESOME*/
+    .conteneur i
+    {
+    font-size: 1.5vw;
+    margin: 0 0.5%;
+    }
+     /* FONTAWESOME*/
+
+#footer > p
+{
+    display: block;
+}
+
+
+/*.contenu img
+{
+    margin: 0;
+    width: 70%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: bold;
+    }
+    #our_story .contenu:first-child, #fare .contenu:last-child, #drine .contenu:first-child, #contact .contenu:last-child
+    {
+        padding: 3%;
+        width: 43.3%;
+    }
+
+    .contenu h3
+    {
+        text-transform: uppercase;
+        font-size: 4vw;
+        font-weight: bold;
+
+    }
+    .contenu p
+    {
+        font-style: italic;
+        font-size: 2.5vw;
+    }*/

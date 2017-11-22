@@ -1,0 +1,54 @@
+body /* reglage de la page en général*/
+{
+    margin: 150px 0 0 250px ;
+    background: #fff; /*raccourci de #ffffff */
+    font-family: 'Cormorant Garamond', serif; /* mise en place de la police*/
+    font-size: 1em;
+    text-align: center; /*alignement du texte de la page au centre*/
+    width: 50%;
+}
+
+div.header /*entête de page*/
+{
+height: 50%;
+display: block;
+}
+    div.header p /* <p> de l'entête*/
+    {
+    font-size: 0.8em; /*police de <p>*/
+    color:   #462c0d; /* couleur de <p>*/
+    }
+
+    header h1, footer h1 /* titre de la page */
+    {
+    width: 50%;
+    text-align: center;
+    font-size: 3.1em; /*taille des éléments*/
+    letter-spacing: 10px; /* espacement entre les titres*/
+    text-decoration: none; /* retrait du surlignement */
+    border-top: 1px solid; /* rien de spéciale pour le moment*/
+    border-bottom: 1px solid; /*rien de spéciale pour le moment*/
+    margin: 0 auto;
+
+    }
+
+nav ul li /* selection de liste dans l'entête*/
+{
+    list-style-type: none; /* enleve les puces de la liste*/
+    display: inline; /* place le menu en ligne a la suite du titre*/
+}
+
+    nav ul li a
+    {
+    text-decoration: none;
+    color: #000;
+    }
+
+div#plat, div#salle, div#service, div#dressage, div#gout
+{
+    display: inline-block;
+}
+div#plat img
+{
+
+}

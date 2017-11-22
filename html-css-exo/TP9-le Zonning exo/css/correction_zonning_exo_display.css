@@ -1,0 +1,84 @@
+/* 1er PARTIE CORPS DE LA PAGE */
+#conteneur
+{
+    width: 960px;
+    background: paleturquoise;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header
+{
+    background: tan;
+    height: 60px;
+    line-height: 60px;
+}
+
+nav
+{
+    background: darkslategray;
+    height: 30px;
+    line-height: 30px;
+}
+
+section
+{
+    height: 500px;
+    background: gray;
+    margin: 10px;
+}
+
+footer
+{
+    background: silver;
+    height: 70px;
+    line-height: 70px;
+}
+
+/* FIN DE LA PREMIERE PARTIE*/
+
+/*CLASS*/
+
+.grand
+{
+    border: 1px solid;
+    /*float: left;*/
+    display: inline-block;
+    height: 248px;
+    /*width: 468px;*/
+}
+
+.petit
+{
+    border: 1px solid;
+    /*float: left;*/
+    height: 122px;
+    display: inline-block;
+    line-height: 122px;
+    text-align: center;
+    /*width: 232px;*/
+}
+
+.c1
+{
+    background: peachpuff;
+    }
+
+.c2
+{
+    background: #7a9eb1;
+}
+
+.c3
+{
+    background: #415865;
+}
+
+.c4
+{
+    background:#ffe1b3;
+}
+
+/*FIN CLASS*/
+/* revoir les cours */

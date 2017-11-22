@@ -1,0 +1,41 @@
+///processeur intel core i7-7800X(3.5Ghz)               /449€95/        Socket 2066 
+(
+    Fréquence : 3.5 GHz / 4.0 GHz (Turbo)
+    6 coeurs / 12 threads
+    Cache 8.25 Mo
+    Socket Intel LGA 2066
+    Contrôleur mémoire DDR4 Quad-channel
+    Contrôleur PCI-Express 3.0 16x
+    Enveloppe thermique maximale (TDP) : 140W )///
+
+Gigabyte X299 AORUS Gaming 9                           /579€95/ (toute frequence RAM)
+
+ou
+
+ASUS PRIME X299-A 3                                   /329€95/ (jusqu'a 3600ghz)
+
+------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+///Processeur intel core i7-7700K 4.2Ghz               /409€95/        Socket 1151
+(
+    Fréquence : 4.2 GHz / 4.5 GHz (Turbo)
+    4 coeurs / 8 threads
+    Cache 8 Mo
+    Socket Intel LGA 1151
+    Contrôleur mémoire Dual Channel DDR3L/DDR4
+    Contrôleur PCI-Express 3.0 16x
+    Intel HD Graphics 630
+    Enveloppe thermique maximale (TDP) : 95W )///
+
+
+ASUS ROG Z270 MAXIMUS IX EXTREME                      /819€95/ (toute frequence RAM)
+ou
+Gigabyte aorus GA-Z270X-GAMING9                       /669€95/ (jusqu'a 2400ghz)
+
+
+----------------------------------
+
+
+graveur
+alim
+windows

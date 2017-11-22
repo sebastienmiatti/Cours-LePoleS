@@ -1,0 +1,77 @@
+body
+{
+    font-family:sans-serif;
+    font-size:1.5em;
+}
+
+ul /*selection de toutes les liste */
+{
+    list-style: none; /*suppression des puces*/
+    background-image: linear-gradient(rgb(147, 67, 196), rgb(171, 171, 171) -40%, rgb(147, 67, 196) 60%,rgb(171, 171, 171));
+    float: left; /*effet flottant a gauche*/
+    margin: 0 auto; /*marge extérieur*/
+    padding: 0; /*marge interieur*/
+}
+
+.left, .right
+{
+    margin-top: 5em;
+}
+
+.left ul
+{
+    background-image: linear-gradient(rgb(208, 172, 230), rgb(84, 11, 91), rgb(208, 172, 230));
+    margin: 3.25em 0 0 0;
+}
+
+    .left ul li /*tout les <li> de la liste <ul> ayant la class .left*/
+    {
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding: 1em;
+    width: 10em;
+    }
+    .left ul li:first-child /*premier <li> de la liste <ul> ayant la class .left*/
+    {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+
+ul.liste li /*tous les <li> de la liste <ul> ayant la class .liste*/
+{
+    border-left: 1px solid #ccc;
+}
+/* fin de la première colonne*/
+
+.right .change ul li /*tout les <li> de la liste <ul> ayant la class .change elle même enfant de la class .right*/
+{
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 1em;
+    width: 10em;
+    text-align: center;
+}
+
+    .right .change ul li:first-child /*premier <li> de la liste <ul> ayant la class .change, elle même enfant d'une class .right*/
+    {
+    background-image: linear-gradient(rgb(208, 172, 230), rgb(84, 11, 91), rgb(208, 172, 230));
+    color: #fff;
+    font-weight: bold; /*style de la police: gras**/
+    }
+    .right .change ul li:last-child /*dernier <li> de la liste <ul> ayant la class .change, elle-même enfant de la class .right*/
+    {
+    border-bottom: 1px solid #ccc;
+    }
+
+ /*Effets de transition au survol de la souris*/
+    .right .change ul:hover /* au survol de la souris pseudo-class :hover on selectionne la liste <ul> ayant la class .change, elle même enfant de la class .right*/
+    {
+    background: linear-gradient(#d5d5d5, #8a8a8a); /* dégradé de couleur*/
+    cursor: pointer; /* changemen t de l'affichage du curseur*/
+    transform: scale(1.4); /*échelle de zomm*/
+    transition-duration: 2s /* durée de l'affichage de l'effet de transition*/
+    }
+    .right .change ul:hover li:first-child /*au survol de la souris on selectionne le premier <li> de la liste <ul>ayant la class .change elle-même enfant de la class .right*/
+    {
+    background: #000;
+    }

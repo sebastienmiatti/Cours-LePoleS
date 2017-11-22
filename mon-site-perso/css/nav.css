@@ -1,0 +1,30 @@
+body
+{
+    border: 0.5px solid black;
+    text-align: justify;
+}
+
+#menu a {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+    list-style: none;
+}
+
+li
+{
+    background-color:#6441A4;
+    padding: 18px;
+    margin: auto;
+    border-right: 2px inset lightgrey;
+    border-left: 2px inset lightgrey;
+}
+
+    li:hover
+    {
+    text-decoration: underline;
+    background-color: #9F94B3;
+    color: #6441A4;
+    border-right: 1px outset #6441A4;
+    border-left: 1px outset #6441A4;
+    }

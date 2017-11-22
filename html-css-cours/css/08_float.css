@@ -1,0 +1,41 @@
+div
+{
+    margin: 50px 0 0 50px;
+}
+
+body
+{
+    background-color: pink;
+}
+
+img
+{
+    height: 200px;/*hauteur*/
+    width: 200px; /*largeur*/
+    border: 5px outset purple; /* taille, style, couleur de la bordure*/
+    margin: 15px;
+    display: block;
+    float:right; /*effet flottant, permet de placer des balises côte à côte alors que selon le flux du web standard les elements se placent les uns au dessus des autres.*/
+    transition: margin 0.5s;
+}
+    img:hover/* la speudo-classe :hover modifie*/
+    {
+        margin-top: 3px;
+    }
+
+.clear
+{
+    clear: both;
+}
+
+
+p
+{
+    background-color: red;
+    /*display: inline*/
+}
+
+    p span
+    {
+    Background-color: yellow;
+    }

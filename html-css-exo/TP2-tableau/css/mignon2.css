@@ -1,0 +1,50 @@
+body
+{
+        background-color: white;
+        background-attachment: fixed;
+        margin: auto;
+
+}
+
+table
+{
+    border: 0.5px solid black;
+    border-spacing: 0;
+
+}
+
+tbody
+{
+    border: 0.5px solid #6a5acd;
+
+}
+
+
+td
+{
+background-color: yellow;
+border: 1px solid black;
+padding: 45px;
+}
+
+.marron
+{
+background-color: rgb(107, 89, 59);
+}
+
+.darkmarron
+{
+    background-color: rgb(59, 38, 19)
+}
+.grey
+{
+    background-color: silver;
+}
+.black
+{
+    background-color:black;
+}
+.blue
+{
+    background-color: blue;
+}

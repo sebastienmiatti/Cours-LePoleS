@@ -1,0 +1,107 @@
+body
+{
+    background: radial-gradient(circle, white, blue,purple);
+}
+
+#conteneur
+{
+    width: 80vh;
+    height: 50vw;
+    margin: 0 auto;
+    border: 2px solid darkslategray;
+}
+
+header
+{
+    background-color: #8e3557;
+    height: 100px;
+    margin: 1px;
+}
+
+nav
+{
+    background-color: #4a1a2c;
+    height: 30px;
+    margin: 1px;
+}
+
+section
+{
+    background-color: #787746;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid;
+    font-family: algerian;
+}
+
+footer
+{
+    background-color: #4a1a2c;
+    height: 100px;
+    margin: 1px;
+}
+
+.a, .c, .e, .g
+{
+    width: 25%;
+    height: 30%;
+    float : left;
+}
+.b, .f
+{
+    width: 50%;
+    height: 30% ;
+    float: left;
+}
+
+.a
+{
+    background-color: yellow;
+}
+
+.b
+{
+    background-color: red;
+
+}
+
+.e
+{
+    background-color: green;
+
+}
+
+.d
+{
+    background-color: black;
+    height: 50%;
+}
+
+.c
+{
+    background-color: purple;
+
+}
+
+.d
+{
+    background-color: grey;
+
+}
+
+
+.g
+{
+    background-color: pink;
+
+}
+
+.f
+{
+    background-color: black;
+    color: white;
+}
+.clear
+{
+    clear: both;
+}

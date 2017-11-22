@@ -1,0 +1,28 @@
+
+  ![JavaScript](https://deshayesalexandre.files.wordpress.com/2017/04/javascript_logo.png?w=175&h=175)
+
+
+ ----
+
+ Le **JavaScript** est majoritairement utilisé sur Internet, avec les pages Web HTML. Le JavaScript s'inclut directement dans la page Web (ou dans un fichier externe) et permet de dynamiser une page HTML, en ajoutant des interactions avec l'utilisateur, des animations,  ou encore de l'aide à la navigation, comme par exemple :
+
+   Afficher/masquer du texte ;
+
+   Faire défiler des images ;
+
+   Créer un diaporama avec un aperçu « en grand » des images ;
+
+   Créer des infobulles.
+
+> * Le JavaScript est un langage de programmation interprété, c'est-à-dire qu'il a besoin d'un interpréteur pour pouvoir être exécuté. Il est utilisé majoritairement au sein des pages Web mais son utilisation en guise de serveur ou d'application commence à se répandre.
+
+ > * Tout comme le HTML, le JavaScript est généralement exécuté par le navigateur de l'internaute : on parle d'un comportement client-side, par opposition au server-side lorsque le code est exécuté par le serveur.
+
+Le JavaScript est standardisé par l'ECMA International sous le nom d'ECMAScript qui constitue la référence du langage. La dernière version standardisée du JavaScript est basée sur l'ECMAScript 5, sorti en 2009. Mais sa nouvelle version, ECMAScript 6, prend du terrain.
+
+----
+
+#### Le JavaScript est un langage de programmation de scripts orienté objet:  
+
+
+![javascript](https://user.oc-static.com/files/292001_293000/292939.png)

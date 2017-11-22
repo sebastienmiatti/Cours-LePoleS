@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'after_shokregular';
+    src: url('aftershok_regular_macroman/After_Shok-webfont.eot');
+    src: url('aftershok_regular_macroman/After_Shok-webfont.eot?#iefix') format('embedded-opentype'),
+         url('aftershok_regular_macroman/After_Shok-webfont.woff') format('woff'),
+         url('aftershok_regular_macroman/After_Shok-webfont.ttf') format('truetype'),
+         url('aftershok_regular_macroman/After_Shok-webfont.svg#after_shokregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+ {
+  font-family: arial, "arial black", verdana, "comic sans MS", "Times new roman", sans-serif;
+  background: url("../img/fond012.jpg") no-repeat fixed center; 
+  border: 4px gold ridge;
+  border-radius: 10px;
+  font-size: 1.4em;
+  color: black;
+  text-align: center;
+  }
+h1
+ {
+ font-family: "After_shokregular", arial, "arial black", verdana, "comic sans MS", "Times new roman", sans-serif;
+ background: url("../img/fond007.jpg") center;
+ border-radius: 3px;
+ border-left: 2px gold groove;
+ border-bottom: 2px gold groove;
+ border-right: 2px gold groove;
+ border-top: 1px silver groove;
+ font-size: 3.2em;
+ color :  gold;
+ text-align: center;
+ }
+h2
+{
+font-family: "After_shokregular", arial, "arial black", verdana, "comic sans MS", "Times new roman", sans-serif;
+ background: url("../img/fond019.jpg") center;
+ border-radius: 3px;
+ border-left: 1px gold groove;
+ border-bottom: 1px gold groove;
+ border-right: 1px gold groove;
+ border-top: 1px silver groove;
+ text-align: center;
+ clear: both;
+}
+a
+{
+text-decoration: none;
+color: red;
+font-style: italic;
+}
+a:hover
+{
+text-decoration: underline;
+color: green;
+}
+a:active
+{
+background-color: silver;
+color: white;
+}
+a:focus
+{
+color: green;
+}
+a:visited
+{
+color: red;
+}
+p
+ {
+ color: black;
+ text-align: center;
+ }
+.noel_mini
+{
+background: url("../img/noel_mini.jpg") no-repeat right;
+float: left;
+border: 1px solid black;
+box-shadow: 4px 4px 6px black;
+}
+em
+{
+color: white;
+background-color: blue;
+}
+.description
+{
+font-style: italic;
+font-size: 1.1em;
+text-decoration: underline;
+text-align: center;
+}
+.texte1
+{
+border: 1px solid black;
+text-align: justify;
+box-shadow: 8px 8px 6px black inset;
+}
+.texte2
+{
+color: black;
+text-align: left;
+font-weight: bold;
+box-shadow: 4px 0px 2px black inset;
+}
+.texte3
+{
+color: black;
+text-align: left;
+font-size: 0.8em;
+}

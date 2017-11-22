@@ -1,0 +1,51 @@
+body
+{
+    width:80%;
+    font-family: cursive, 'sans-serif';
+    color: black;
+    margin: 0 auto;
+    background-color: #d5d5d5;
+
+}
+
+header
+{
+    background: #6f97d5;
+    width: 215px;
+    margin: 80px auto; /*haut-droit & gauche-bas*/
+    font-size: 2.3em;
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+}
+
+section.conteneur
+{
+    padding: 0 auto;
+
+}
+
+.container
+{
+    border: 2px solid;
+    background-color: grey;
+    width: 100%;
+    height: 210px;
+}
+
+.contenu, .contenu1
+{
+    justify-content: space-around;
+    border: 1px solid;
+    width: 47%;
+    background-color: grey;
+    height: 200px;
+
+}
+
+    div.contenu1
+    {
+    position:relative;
+    top:-26vw;
+    right: -40vw;
+    }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Installation climatisation. Chauffages&Clim réversible.</title>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="css/formulaire.css">
+</head>
+<body>
+<div class="container">
+    <h1>Veuillez laisser vos informations de contact :</h1><br>
+
+
+    <form method="post"  action="">
+
+        <!-- cases a cocher -->
+        <label for="genre"></label>
+        <p>
+            <input type="radio" name="question" checked>M.
+            <input type="radio" name="question">Mme
+            <input type="radio" name="question">Mlle
+        </p><br />
+
+
+        <!-- texte -->
+        <label for="nom"></label>
+        <input type="text" id="nom" name="nom" placeholder="Nom*" required><br />
+
+        <!-- mot de passe -->
+        <label for="prenom"> </label>
+        <input type="text" id="prenom" name="prenom" placeholder="Prenom*" required><br />
+
+        <!-- Numero de contact -->
+        <label for="numero"> </label>
+        <input type="text" id="numero" name="numero" placeholder="Numero de contact*" required><br />
+
+        <!-- Email -->
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Adresse mail*"><br />
+
+        <!-- Numero de contact -->
+        <label for="adresse"> </label>
+        <input type="text" id="adresse" name="adresse" placeholder="Adresse*" required><br />
+
+        <!-- Numero de contact -->
+        <label for="codepostal"> </label>
+        <input type="text" id="codepostal" name="codepostal" placeholder="Code Postal*" required><br />
+
+        <!-- Numero de contact -->
+        <label for="ville"> </label>
+        <input type="text" id="ville" name="ville" placeholder="Ville*" required><br /><br>
+        <!-- fichiers -->
+        <!-- <label for="photo">Photo</label>
+        <input type="file" name="photo" ><br /><br /> -->
+
+
+
+        <!--zone de texte  -->
+
+        <label for="commentaire"></label>
+        <textarea name="commentaire" rows="6" cols="60" placeholder="Votre Commentaire"></textarea><br />
+
+
+        <!-- Bouton envoie du formulaire -->
+        <input type="submit" name="inscription" value="Envoyer">
+
+        <!-- Bouton pour vider le formulaire -->
+        <input type="reset" name="annuler" value="Annuler">
+
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+body
+{
+    background: radial-gradient( blue, white, purple, black)
+}
+
+.clear
+{
+    clear: both;
+}
+
+.c1, .c2, .c3, .c4, .c5
+{
+    height: 40px;/*hauteur*/
+    width: 40px;/*largeur*/
+     /* si on met pas la 3eme valeur la couleur du trait sera par defaut noir.*/
+    margin: 4px;
+    float: left;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.c1
+{
+    background: linear-gradient(-90deg, blue, purple);
+    border: 0.5px solid;
+    border-radius: 10% 20% 30% 40%;
+}
+
+.c2
+{
+    background: linear-gradient(90deg, pink, purple);
+    border: 0.5px solid;
+    border-radius: 40% 0%;
+}
+
+.c3
+{
+    background:radial-gradient(red 5%, yellow 15%, green 60%);
+    border: 0.5px solid;
+    border-radius: 50%;
+}
+
+.c4
+{
+    background: radial-gradient(blue 15%,red 25%, purple 30%);
+    border: 0.5px solid;
+    border-radius: 20% 40%;
+}
+div:nth-child(18)
+{
+    background: red;
+    border: 0.5px solid;
+    border-radius: 20% 40%;
+}

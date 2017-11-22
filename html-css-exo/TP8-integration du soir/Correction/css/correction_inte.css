@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat+Brush');
+
+header
+{
+    position: relative; /* place le header en position principal*/
+    background-image: url(../img/woodPlank.jpg);
+}
+    nav
+    {
+        top: 40px;
+        position: absolute; /* position fixe par rapport au parent*/
+        right: 25px;
+    }
+
+        nav a
+        {
+         margin:30px;
+         font-size: 30px;
+         color: black;
+         text-decoration: none;
+         text-transform: uppercase;
+         font-family: 'Caveat Brush', cursive;
+        }
+
+.logoresto
+{
+    position: relative;
+    display: inline-block;
+    margin-left: 80px;
+}
+
+h1
+{
+    font-family: 'Caveat Brush', cursive;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+    h1 span
+    {
+        font-size: 40px;
+        vertical-align: top;
+        position: relative;
+    }
+    h1 span:after
+    {
+        top: 20px;
+        content:"-";
+        position: absolute;
+        left: 0;
+    }
+
+#logo
+{
+    width: 300px;
+    margin: auto;
+    position: relative;
+    margin-top: 250px;
+    padding-bottom: 250px;
+}
+
+    #logo div
+    {
+    width: 0;
+    height: 0;
+    border-top: 250px solid #e53f6f;
+    border-left: 250px solid transparent;
+    }
+
+    #logo img
+    {
+        top: -30px;
+        position: absolute;
+        width: 100%;
+    }
+
+.inlineb
+{
+    display: inline-block;
+}
+
+
+/*les traits roses*/
+.rectrose
+{
+    position: absolute;
+    bottom: 15px; /* deplacement du trait rose de son emplacement*/
+    margin: 0;
+    display: block;
+    border: 7px solid #e53f6f;
+    padding: 0 17px;
+    width: 0;
+    left: 26%;
+}
+
+/*fleche*/
+i
+{
+    margin-top: 5vw;
+    display: inline-block;
+    font-style: normal;
+    position: relative;
+}
+
+    i#fleche
+    {
+        top: 4vw;
+        left: -7vw;
+        width: 3.4em;
+        height: 3.4em;
+        border-right: 0.3em solid #d4276d;
+        border-top: 0.3em solid #d4276d;
+        transform: rotate(134deg);
+    }
+ /*FIN HEADER*/
+
+
+
+ /*SECTION*/
+h2
+{
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+#story h2
+{
+    font-size: 55px;
+}
+section .rectrose
+{
+    position: inherit;
+    margin: auto;
+    left: 0;
+    bottom: 2px;
+}
+
+section img
+{
+    width: 100%
+}
+
+section > section /* le cible le 1er enfant <section> du parent <section>*/
+{
+    overflow: hidden; /* tout depassement du cadre du contenant sera caché*/
+    height: 820px;
+    text-align: center;
+}
+
+section p, section h2
+{
+    padding: 0 15%;
+}
+
+.pBloc-left, .pBloc-right
+{
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+}
+
+.pBloc-left
+{
+width:  40%;
+overflow: visible;
+position: relative;
+}
+
+.pBloc-right
+{
+    width: 60%;
+}
+
+#story img
+{
+    transform: scaleX(-1); /*mise à l'échelle sur l'axe horizontal*/
+    width: 125%;
+}
+#story div
+{
+    transform: scaleX(-1);
+    height: 100%;
+    background-image: url('../img/asperge.jpg');
+    background-size: cover;
+}
+
+#soap .Bloc-left
+{
+    width: 30%;
+}
+
+#soap .Bloc-right
+{
+    width: 70%;
+    height: 900px;
+}
+
+#drink
+{
+    height: 755px;
+}
+
+.textrose
+{
+    color: #e56f6f;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+
+.pBloc-left > img
+{
+    width: 50%;
+}
+
+#drink .pBloc-left img
+{
+    position: relative;
+    top: 70px;
+    z-index: -1; /* position sur l'axe vertical - gère l'empilement de 2 ou plusieurs couleurs*/
+}
+
+#eggs
+{
+    width: 100%;
+}
+ /*FIN DE SECTION*/
+
+ /* FOOTER */
+
+ footer
+{
+    padding: 150px 0;
+    background-image: url(../img/pattern.jpg);
+}
+
+footer > div
+{
+    display: inline-block;
+    /*width: 50%;*/
+}
+
+footer p
+{
+font-family: sans-serif;
+text-transform: uppercase;
+padding-left:  78px;
+font-size: 0.9em;
+}
+
+#social ul
+{
+    float: right;
+    margin-right: 50px;
+    padding-left: 65vw;
+}
+
+#social li
+{
+    display: inline-block;
+    text-align: right;
+    margin: 0 5px;
+    color: #e53f6f;
+}

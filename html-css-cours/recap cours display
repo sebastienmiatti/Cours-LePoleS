@@ -1,0 +1,16 @@
+justify-content: Flex-start/end _ center _ space-around/between
+<!-- L'espace entre les élements ou la répartition des éléments sur plusieurs colonnes-->
+align-items: baseline _ center _ stretch _ flex-start/end
+<!-- placement des l'élements dans les colonnes de la page -->
+flex-direction: row/row-reverse _ column/column-reverse
+<!-- placement des éléments par ordre en ligne ou colonne -->
+order: -1 1
+<!-- place les éléments en première ou dernière position. -->
+align-self: baseline _ center _ stretch _ flex-start/end
+<!-- placement de l'élement dans la colonne de la page -->
+flex-wrap: wrap _ no-wrap _ wrap-reverse
+<!-- placement des éléments à la ligne si trop d'éléments sur la meme -->
+
+flex-flow: flex-direction + flex-wrap
+flex-direction: column-reverse;
+align-content: center
