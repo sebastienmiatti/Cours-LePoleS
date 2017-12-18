@@ -4,13 +4,15 @@
  * and open the template in the editor.
  */
 /**
- * Author:  mila
+ * Author:  miatti Sebastien
  * Created: 5 sept. 2017
  */
 /**
 * Objectif : Créer dans PHPMyAdmin une base de données haribo dont la modélisation est ci-dessous, les étapes sont détaillées ensuite.
 */
-
+cd mysql
+cd bin
+mysql.exe -uroot
 /**
 +---------------+----------------+------+------+---------+----------------+
 | Field         | Type           | Null | Key  | Default | Extra          |
@@ -45,6 +47,9 @@
 */
 
 --1-- lister toutes les BDD de PHPMyAdmin
+CREATE DATABASE IF NOT EXISTS haribo;
+
+USE haribo;
 
 --2-- Créer une base de données SQL nommée HARIBO
 
@@ -57,6 +62,13 @@
 * - couleur des yeux => 30 caractères, requis
 * - genre => homme ou femme, requis
 */
+CREATE TABLE stagiaire (
+    id_stagiaire INT NOT NULL AUTO_INCREMENT,
+    prenom VARCHAR(100) NOT NULL,
+    yeux VARCHAR(30) NOT NULL,
+    genre ENUM('h','f') NOT NULL,
+    PRIMARY KEY (id_stagiaire)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --4--
 /**
@@ -85,6 +97,12 @@ INSERT INTO stagiaire (id_stagiaire, prenom, yeux, genre) VALUES
 * - nom => 100 caractères, requis
 * - saveur => 100 caractères, requis
 */
+CREATE TABLE bonbon (
+    id_bonbon INT NOT NULL AUTO_INCREMENT,
+    nom VARCHAR(100) NOT NULL,
+    saveur VARCHAR(100) NOT NULL,
+    PRIMARY KEY (id_bonbon)
+) ENGINE=InnoDB ;
 
 --6--
 /**
@@ -114,6 +132,15 @@ INSERT INTO bonbon (id_bonbon, nom, saveur) VALUES
 * - quantite => nombre, requis
 */
 
+CREATE TABLE manger (
+    id_manger INT NOT NULL AUTO_INCREMENT,
+    id_bonbon INT DEFAULT NULL,
+    id_stagiaire INT DEFAULT NULL,
+    date_manger DATE NOT NULL,
+    quantite INT NOT NULL,
+    PRIMARY KEY  (id_manger)
+) ENGINE=InnoDB ;
+
 --8--
 /**
 * insérer dans la table manger des informations sur qui a consommé quel bonbon, quand et dans quelles quantités (faites un copier-coller des lignes ci-dessous) :
@@ -134,6 +161,9 @@ INSERT INTO manger (id_manger, id_bonbon, id_stagiaire, date_manger, quantite) V
 (13, 10, 5, '2017-03-20', 1),
 (14, 19, 2, '2017-04-04', 2),
 (15, 15, 5, '2017-05-19', 14);
+
+--8-- lister toutes les BDD de PHPMyAdmin
+SHOW databases;
 
 --9-- Lister les tables de la BDD *haribo*
 SHOW TABLES;
@@ -218,6 +248,7 @@ SELECT count(*) FROM stagiaire;
 
 --35-- Compter le nombre de stagiaires hommes mais en changeant le nom de la colonne de résultat par *nb_stagiaires_H*
 !!!!!!!!!!!!!!!!SELECT count(*) FROM stagiaire as nb_stagiaire_H(id_stagiaire) FROM stagiaire WHERE yeux; !!!!!!!!!!!!!!!!!!!!!
+SELECT COUNT(*) AS nb_stagiaires_H FROM stagiaire WHERE genre = 'h';
 
 --36-- Compter le nombre de couleurs d'yeux différentes
 SELECT COUNT(DISTINCT yeux) FROM stagiaire;
@@ -230,9 +261,11 @@ SELECT prenom, yeux FROM stagiaire WHERE id_stagiaire = (SELECT max(id_stagiaire
 
 --39-- Afficher les stagiaires qui ont les yeux bleu et vert
 SELECT * FROM stagiaire WHERE yeux = 'bleu' AND yeux = 'vert';
+SELECT * FROM stagiaire WHERE yeux IN('bleu', 'vert');
 
 --40-- A l'inverse maintenant, afficher les stagiaires qui n'ont pas les yeux bleu ni vert
 SELECT * FROM stagiaire WHERE yeux != 'bleu' AND yeux != 'vert';
+SELECT * FROM stagiaire WHERE yeux NOT IN('bleu', 'vert');
 
 --41-- récupérer tous les stagiaires qui ont mangé des bonbons, avec le détail de leurs consommations
 SELECT m.*, s.*
@@ -262,19 +295,26 @@ ON s.id_stagiaire = m.id_stagiaire
 WHERE m.quantité = (SELECT MAX(quantite) FROM manger);
 
 --45-- Calculer combien de bonbons ont été mangés au total par chaque stagiaire et afficher le nombre de fois où ils ont mangé
-!!!!!!!!!!!!
+SELECT m.quantite, COUNT(*) AS nb_conso, s.prenom
+FROM manger m
+INNER JOIN stagiaire s ON m.id_stagiaire = s.id_stagiaire
+GROUP BY s.prenom;
 
 --46-- Afficher combien de bonbons ont été consommés au total
-!!!!!!!!!!!!!SELECT SUM(bonbon) FROM ;
+!!!!!!!!!!!!!SELECT SUM(bonbon) FROM manger;
+SELECT SUM(quantite) AS total_conso FROM manger;
 
 --47-- Afficher le total de *Tagada* consommées
 !!!!!!!!!!!!!SELECT SUM(nom) = 'tagada'  FROM bonbon;
+ SELECT b.nom, SUM(m.quantite) FROM bonbon b LEFT JOIN manger m ON b.id_bonbon = m.id_bonbon WHERE b.nom = 'Tagada';
 
 --48-- Afficher les prénoms des stagiaires qui n'ont rien mangé
-!!!!!!!!!!!!!SELECT prenom FROM stagiaire WHERE
+!!!!!!!!!!!!!SELECT prenom FROM stagiaire WHERE;
+SELECT s.prenom FROM stagiaire s LEFT JOIN manger m ON s.id_stagiaire = m.id_stagiaire WHERE m.quantite IS NULL;
 
 --49-- Afficher les saveurs des bonbons (sans doublons)
-!!!!!!!!!!!!SELECT(DISTINCT)
+!!!!!!!!!!!!SELECT(DISTINCT);
+SELECT DISTINCT saveur FROM bonbon;
 
 --50-- Afficher le prénom du stagiaire qui a mangé le plus de bonbons
-SELECT prenom 
+SELECT s.prenom FROM stagiaire s LEFT JOIN manger m ON s.id_stagiaire = m.id_stagiaire WHERE m.quantite = (SELECT MAX(quantite) FROM manger);
